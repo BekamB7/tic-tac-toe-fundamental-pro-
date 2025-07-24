@@ -1,0 +1,137 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+body {
+  background-color: rgb(31, 37, 66);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  width: 80px;
+  height: 60px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(58, 51, 51);
+}
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 20px;
+  color: rgb(158, 149, 151);
+}
+#o {
+  background-color: rgb(9, 79, 209);
+}
+#x {
+  background-color: rgb(129, 1, 97);
+}
+#o,
+#x {
+  width: 80px;
+  height: 70px;
+  border-radius: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(11, 149, 248, 0.363);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 30px 0 0;
+}
+.active {
+  /* background-color: rgb(73, 114, 248); */
+  background: linear-gradient(45deg, rgba(226, 219, 219, 0.5), rgba(20, 20, 224, 0.5));
+  color: white;
+  transform: scale(1.05);
+}
+.active a {
+  color: rgb(255, 255, 255);
+  transition: background-color 0.93s ease-in-out;
+}
+.game-container {
+  width: 400px;
+  height: 500px;
+  background-color: rgb(12, 18, 46);
+  border-radius: 30px;
+}
+
+.entry {
+  width: 100%;
+  height: 70%;
+  background-color: rgb(12, 18, 46);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box {
+  width: 27%;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: rgb(212, 209, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.disable {
+  pointer-events: none;
+  &:hover {
+    transform: scale(1.002);
+    background-color: rgb(145, 34, 12);
+  }
+}
+.restart {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgb(8, 2, 6);
+  border-radius: 8px;
+}
+.restart a {
+  color: rgb(109, 1, 1);
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  &:hover {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+/* //ADDED CALSS LIST BY THE JAVSCRIPT  */
+.x{
+  background-color:rgb(129, 1, 97);
+  color:rgb(129, 1, 97);
+  font-size: 30px;
+  font-weight: bold;
+}
+.o{
+  background-color:  rgb(9, 79, 209);;
+  color: rgb(9, 79, 209);
+  font-size: 30px;
+  font-weight: bold;
+}
